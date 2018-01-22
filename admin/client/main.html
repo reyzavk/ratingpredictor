@@ -1,0 +1,84 @@
+<head>
+    <title>Naive Bayes</title>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h3>Manajemen Corpus Naive Bayes dengan Data Review Tokopedia</h3>
+    </div>
+
+    <div class="container">
+        <form class="form-horizontal" id="scrape">
+            <div class="form-group">
+                <label for="scrape-link" class="control-label col-sm-2">Link Tokopedia:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="scrape-link" id="scrape-link">
+                </div>
+            </div>
+            <div class="col-sm-offset-2 col-sm-10">
+            </div>
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-default">Scrape !!</button>
+            </div>
+        </form>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <form class="form-horizontal" id="ignore">
+            <div class="form-group">
+                <label for="word" class="control-label col-sm-2">Corpus :</label>
+                <div class="col-sm-10">
+                    <select name="word" form="ignore" id="ignore-word">
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-offset-2 col-sm-10" id="ignore-msg">
+            </div>
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-default">Blacklist</button>
+            </div>
+        </form>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <form class="form-horizontal" id="unignore">
+            <div class="form-group">
+                <label for="word" class="control-label col-sm-2">Blacklist :</label>
+                <div class="col-sm-10">
+                    <select name="word" form="unignore" id="unignore-word">
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-offset-2 col-sm-10" id="unignore-msg">
+            </div>
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-default">Whitelist</button>
+            </div>
+        </form>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <form class="form-horizontal" id="predict">
+            <div class="form-group">
+                <label for="scrape-link" class="control-label col-sm-2">Kalimat :</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="predict-sentence" id="predict-sentence">
+                </div>
+            </div>
+            <div class="col-sm-offset-2 col-sm-10" id="prediction">
+            </div>
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-default">Predict !!</button>
+            </div>
+        </form>
+    </div>
+
+    <br><br><br>
+
+</body>
